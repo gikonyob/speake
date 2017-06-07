@@ -54,7 +54,7 @@ You  can view voices installed in your system both generally and specifially;
 
 ````
  >>> engine.set("voice", "en") # voice attribute can be any VoiceName value or 
- >>>			#File value gotten from the voices dictionaries
+ >>>			   #File value gotten from the voices dictionaries
 ````
     
 Possible attributes that can be set are:```textfile, stdin, amplitude, wordgap, 
