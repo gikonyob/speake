@@ -146,9 +146,9 @@ class Speake:
                 self.z += value
                 self.commands += self.z
             else:
-                print None
+                return None
         else:
-            print None
+            return None
 
     def unset(self, option):
         # Function that unsets options of Speake instance
@@ -208,7 +208,7 @@ class Speake:
                 self.commands = self.commands.replace(self.z, "")
                 self.z = self.z.replace(self.z, ' -z ')
         else:
-            print None
+            return None
 
     def get(self, option, value=""):
         # Function that gets read only properties of the Speake instance
