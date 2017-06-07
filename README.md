@@ -8,27 +8,27 @@ of espeak tts engine in Python.
 
 ### Requirements
 ```
-	- Linux system
-	- Espeak
-	- python2.x
+ - Linux system
+ - Espeak
+ - python2.x
 ```
 ### Install commands
 ````
-	pip install speake
+ pip install speake
 ````
 
 
 ## Quick start
-..code-block:: python
 
-    >>> import speake
-    >>> 
-    >>> engine = speake.Speake()
-    >>> engine.set('voice', 'en')
-    >>> engine.set('amplitude', '107')
-    >>> engine.set('pitch', '99')
-    >>> engine.say("Hello world!")
-    >>> engine.talkback()
-
+````
+>>> import speake
+>>> 
+>>> engine = speake.Speake()
+>>> engine.set('voice', 'en')
+>>> engine.set('amplitude', '107')
+>>> engine.set('pitch', '99')
+>>> engine.say("Hello world!")
+>>> engine.talkback()
+````
 
     
