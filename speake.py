@@ -1,5 +1,4 @@
 #! /usr/bin/env python2
-from __future__ import print_function, with_statement
 import os
 import shlex
 import subprocess
