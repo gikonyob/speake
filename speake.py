@@ -54,7 +54,6 @@ class Speake:
         self.status_error = ''
         if not os.path.exists('/usr/bin/espeak'):
             raise OSError("Espeak text-to-speech engine is not installed in this system!")
-            SystemExit()
 
     def __listoutput(self, voices):
         # Private function that converts output of get("voices") to a list of dictionaries
