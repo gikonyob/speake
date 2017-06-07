@@ -20,7 +20,8 @@ If pip is installed simply do;
 
 
 ## Quick start
-A simple script using speake module
+A simple script using speake module;
+
 ````
 >>> import speake
 >>> 
@@ -33,11 +34,13 @@ A simple script using speake module
 ````
 
 You can view the version of espeak installed;
+
 ````
  >>> engine.get("version")
 ````
 
 You  can view voices installed in your system both generally and specifially;
+
 ````
  >>> voices = engine.get("voices") # General
  >>> for voice in voices:
@@ -48,9 +51,10 @@ You  can view voices installed in your system both generally and specifially;
  ````
 
  You can set properties using set method;
+
 ````
  >>> engine.set("voice", "en") # voice attribute can be any VoiceName value or 
- >>>						   #File value gotten from the voices dictionaries
+ >>>					#File value gotten from the voices dictionaries
 ````
     
 Possible attributes that can be set are:```textfile, stdin, amplitude, wordgap, 
@@ -58,12 +62,14 @@ capitals, line-length, pitch, speed, voice, wavfile, stdout, version, voices, te
 markup, quiet, punct, split, write-pm, nopause```
 
 Properties that have been set can also be unset;
+
 ````
  >>> engine.unset("speed")
  >>> engine.unset("pitch")
 ````
 If you make multiple calls on say before calling the talkback method all the string parameters in
 the say methods will be spoken one after the other since they are put in an internal queue.
+
 ````
  >>> engine.say("Hello World")
  >>> engine.say("Foo bar")
